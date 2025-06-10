@@ -21,7 +21,8 @@ describe('routes', () => {
       expect(response.body).toHaveProperty('error');
       expect(response.body.error).toEqual('Invalid calendar date: "99-99-9999"');
     });
-
+    
+    //Return 404
     it('should return 404 for a valid but nonexistent date', async () => {
       const response = await request(app).get('/api/daily-challenge/date/1-1-1111');
       expect(response.status).toBe(404);
