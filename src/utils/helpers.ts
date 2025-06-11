@@ -9,6 +9,7 @@ export function formatDateUsCentral(dateObj: Date) {
     .replace(/\//g, '-');
 }
 
+//Function getTodayUSCentral -> returns time in Central time
 export function getTodayUsCentral() {
   return new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' }));
 }
