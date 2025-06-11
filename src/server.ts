@@ -4,6 +4,7 @@ import debug from 'debug';
 
 const log = debug('app:server');
 
+//Always use 3000 
 const portNum = process.env.PORT || 3000;
 
 (async function() {
