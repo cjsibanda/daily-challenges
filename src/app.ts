@@ -6,7 +6,7 @@ import routes from './routes';
 const app = express();
 
 app.use(express.json());
-//Use Routes
+//Routes
 app.use(routes);
 
 
